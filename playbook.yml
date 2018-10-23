@@ -1,0 +1,13 @@
+---
+  - name: installation des serveurs
+    hosts: IP_Serveurs
+    remote_user: root
+    vars:
+     user: ansible
+     domain: html.test
+
+    roles:
+            - user
+            - inst 
+            - nginx
+...

@@ -1,0 +1,10 @@
+---
+   - become: yes
+     apt: name={{ item }} update_cache=yes
+     with_items:
+                - vim
+                - htop
+                - git
+                - tree  
+
+...

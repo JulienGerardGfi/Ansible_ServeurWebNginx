@@ -1,0 +1,7 @@
+---
+- name: create user
+  user: name={{ user }} shell=/bin/bash
+- name: "{{ user }} become sudoer"
+  template: src=templates/sudoers.j2 dest=/etc/sudoers.d/{{ user }}-sudoer     
+  when: user is defined
+...
