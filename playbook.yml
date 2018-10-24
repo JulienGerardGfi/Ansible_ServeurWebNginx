@@ -3,11 +3,11 @@
     hosts: IP_Serveurs
     remote_user: root
     vars:
-     user: ansible
+     user: test
      domain: html.test
 
     roles:
             - user
             - inst 
-            - nginx
+#            - nginx
 ...
